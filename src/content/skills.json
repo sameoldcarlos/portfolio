@@ -1,0 +1,36 @@
+{
+  "skills": [
+    {
+      "title": "Skill 1",
+      "icon": "icon.png"
+    },
+    {
+      "title": "Skill 2",
+      "icon": "icon.png"
+    },
+    {
+      "title": "Skill 3",
+      "icon": "icon.png"
+    },
+    {
+      "title": "Skill 4",
+      "icon": "icon.png"
+    },
+    {
+      "title": "Skill 5",
+      "icon": "icon.png"
+    },
+    {
+      "title": "Skill 6",
+      "icon": "icon.png"
+    },
+    {
+      "title": "Skill 7",
+      "icon": "icon.png"
+    },
+    {
+      "title": "Skill 8",
+      "icon": "icon.png"
+    }
+  ]
+}

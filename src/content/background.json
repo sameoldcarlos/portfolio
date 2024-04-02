@@ -1,0 +1,72 @@
+{
+  "experiences": {
+    "en": [
+      {
+        "position": "Experience 1",
+        "company": "Company 1",
+        "period": "2018 - 2019",
+        "description": "Description 1"
+      },
+
+      {
+        "position": "Experience 2",
+        "company": "Company 2",
+        "period": "2017 - 2018",
+        "description": "Description 2"
+      },
+
+      {
+        "position": "Experience 3",
+        "company": "Company 3",
+        "period": "2016 - 2017",
+        "description": "Description 3"
+      }
+    ],
+
+    "es": [
+      {
+        "position": "Experiencia 1",
+        "company": "Compañía 1",
+        "period": "2018 - 2019",
+        "description": "Descripción 1"
+      },
+
+      {
+        "position": "Experiencia 2",
+        "company": "Compañía 2",
+        "period": "2017 - 2018",
+        "description": "Descripción 2"
+      },
+
+      {
+        "position": "Experiencia 3",
+        "company": "Compañía 3",
+        "period": "2016 - 2017",
+        "description": "Descripción 3"
+      }
+    ],
+
+    "pt": [
+      {
+        "position": "Experiência 1",
+        "company": "Empresa 1",
+        "period": "2018 - 2019",
+        "description": "Descrição 1"
+      },
+
+      {
+        "position": "Experiência 2",
+        "company": "Empresa 2",
+        "period": "2017 - 2018",
+        "description": "Descrição 2"
+      },
+
+      {
+        "position": "Experiência 3",
+        "company": "Empresa 3",
+        "period": "2016 - 2017",
+        "description": "Descrição 3"
+      }
+    ]
+  }
+}

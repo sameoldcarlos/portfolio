@@ -1,0 +1,37 @@
+{
+  "en": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "engineer": "Engineer",
+    "introducing": "Hi, I am Carlos",
+    "description": "I am a software engineer with a passion for technology and innovation. I have experience in web development, mobile development, and cloud computing. I am always looking for new challenges and opportunities to learn and grow.",
+    "resume": "Resume",
+    "any_questions": "Any aditional questions? Get in touch!"
+  },
+
+  "es": {
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "engineer": "Ingeniero",
+    "introducing": "Hola, soy Carlos",
+    "description": "Soy un ingeniero de software con pasión por la tecnología y la innovación. Tengo experiencia en desarrollo web, desarrollo móvil y computación en la nube. Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer.",
+    "resume": "Currículum",
+    "any_questions": "¿Alguna pregunta adicional? ¡Ponte en contacto!"
+  },
+
+  "pt": {
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "contact": "Contato",
+    "engineer": "Engenheiro",
+    "introducing": "Oi, eu sou Carlos",
+    "description": "Sou um engenheiro de software com paixão por tecnologia e inovação. Tenho experiência em desenvolvimento web, desenvolvimento móvel e computação em nuvem. Estou sempre procurando novos desafios e oportunidades para aprender e crescer.",
+    "resume": "Currículo",
+    "any_questions": "Alguma pergunta adicional? Entre em contato!"
+  }
+}
