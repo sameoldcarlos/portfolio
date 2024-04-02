@@ -1,0 +1,23 @@
+:root {
+  --navy: #34495E;
+  --absolute-white: #FFFFFF;
+  --sky-blue: #3498DB;
+  --orange: #F39C12;
+  --gray-lighter: #ECF0F1;
+  --gray-light: #E6E6E6;
+  --gray: #D3D3D3;
+  --gray-darker: #333B3C;
+  --green: #2ECC71;
+
+  --text-primary: var(--navy);
+  --text-secondary: var(--absolute-white);
+  --highlight-primary: var(--sky-blue);
+  --highlight-secondary: var(--orange);
+  --background-primary: var(--gray-lighter);
+  --background-secondary: var(--gray-darker);
+  --card-background: var(--navy);
+  --divider-color: var(--navy);
+  --success: var(--green);
+  --description-header: var(--gray-light);
+  --description-border: var(--gray);
+}
