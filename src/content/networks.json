@@ -1,0 +1,19 @@
+{
+  "networks": {
+    "twitter": {
+      "name": "Twitter",
+      "icon": "twitter",
+      "url": "https://twitter.com/sameoldcarlos"
+    },
+    "github": {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/sameoldcarlos"
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/sameoldcarlos"
+    }
+  }
+}

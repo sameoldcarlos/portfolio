@@ -1,18 +1,21 @@
 {
   "options": {
     "en": [
+      "About",
       "Projects",
       "Skills",
       "Experience",
       "Contact"
     ],
     "es": [
+      "Sobre",
       "Proyectos",
       "Habilidades",
       "Experiencia",
       "Contacto"
     ],
     "pt": [
+      "Sobre",
       "Projetos",
       "Habilidades",
       "Experiência",

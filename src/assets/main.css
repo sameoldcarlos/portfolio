@@ -1,5 +1,3 @@
 @import './base.css';
 
 @import url('@/dist/output.css');
-
-@import url('@/styles/vars.css');

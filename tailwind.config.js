@@ -9,8 +9,12 @@ module.exports = {
       'primary-bg': 'var(--background-primary)',
       'secondary-bg': 'var(--background-secondary)',
       'primary-accent': 'var(--highlight-primary)',
-      'secondary-accent': 'var(--highlight-secondary)',
-    }
+      'secondary-accent': 'var(--highlight-secondary)'
+    },
+    fontFamily: {
+      'primary': 'var(--primary-font-family)',
+      'secondary': 'var(--secondary-font-family)',
+    },
   },
   plugins: [],
 };
