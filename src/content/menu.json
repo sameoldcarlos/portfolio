@@ -1,0 +1,22 @@
+{
+  "options": {
+    "en": [
+      "Projects",
+      "Skills",
+      "Experience",
+      "Contact"
+    ],
+    "es": [
+      "Proyectos",
+      "Habilidades",
+      "Experiencia",
+      "Contacto"
+    ],
+    "pt": [
+      "Projetos",
+      "Habilidades",
+      "Experiência",
+      "Contato"
+    ]
+  }
+}

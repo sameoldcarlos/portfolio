@@ -5,19 +5,22 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css vite build",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/dist/output.css vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "feather-icons": "^4.29.1",
     "js-cookie": "^3.0.5",
     "pinia": "^2.1.7",
     "stylus": "^0.63.0",
     "stylus-loader": "^8.1.0",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-feather": "^2.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
     "tailwindcss": "^3.4.3",

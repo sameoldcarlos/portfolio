@@ -1,13 +1,15 @@
 <script setup>
+import NavBar from '@/components/NavBar.vue';
 </script>
 
 <template>
-  <h1>Carlos Alves</h1>
-  <h2>Frontend Developer</h2>
-  <div>
-    <p>Carlos Alves is a Frontend Developer</p>
-  </div>
+  <section class="content-section bg-gradient-to-b from-secondary-bg to-primary-bg">
+    <component :is="NavBar" />
+  </section>
 </template>
 
-<style scoped>
+<style scoped lang="stylus">
+.content-section
+  min-height 500px
+
 </style>
