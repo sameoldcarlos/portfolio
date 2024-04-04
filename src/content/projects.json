@@ -1,24 +1,36 @@
 {
   "projects": [
     {
-      "title": "Project 1",
-      "description": "This is project 1",
-      "image": "project1.jpg",
-      "link": "http://www.google.com"
+      "title": "Gambi Code",
+      "description": {
+        "en": "Gambi code is an online front-end development environment, which provides the user with a space to write HTML, CSS and Javascript code and run them directly in the browser.",
+        "pt": "Gambi code é um ambiente de desenvolvimento front-end online, que disponibiliza ao usuário um espaço para escrever código HTML, CSS e Javascript e executá-los diretamente no navegador."
+      },
+      "image": "images/projects/gambi_code.png",
+      "link": "https://gambi-code.netlify.app/",
+      "repo": "https://github.com/sameoldcarlos/gambi-code"
     },
 
     {
-      "title": "Project 2",
-      "description": "This is project 2",
-      "image": "project2.jpg",
-      "link": "http://www.google.com"
+      "title": "GoodBuy Store",
+      "description": {
+        "en": "The GoodBuy store is an illustrative e-commerce application, developed purely with the purpose of testing my frontend development skills.",
+        "pt": "A GoodBuy store é uma aplicação ilustrativa de um e-commerce, desenvolvida puramente com o objetivo de testar minhas habilidades com desenvolvimento frontend."
+      },
+      "image": "images/projects/good_buy.png",
+      "link": "https://goodbuy-store.netlify.app",
+      "repo": "https://github.com/sameoldcarlos/fake-store-ecommerce"
     },
 
     {
-      "title": "Project 3",
-      "description": "This is project 3",
-      "image": "project3.jpg",
-      "link": "http://www.google.com"
+      "title": "Soft Bet",
+      "description": {
+        "en": "Fictitious model of a home page for a betting house.",
+        "pt": "Modelo fictício de uma home page para uma casa de apostas."
+      },
+      "image": "images/projects/soft_bet.png",
+      "link": "https://github.com/sameoldcarlos/soft-bet",
+      "repo": "https://github.com/sameoldcarlos/soft-bet"
     }
   ]
 }

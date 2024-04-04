@@ -1,8 +1,10 @@
 <script setup>
 import AuthorCard from '@/components/AuthorCard.vue';
 import NavBar from '@/components/NavBar.vue';
+import ProjectCard from '@/components/ProjectCard.vue';
 import { networks } from '@/content/networks.json';
 import content from '@/content/content.json';
+import { projects } from '@/content/projects.json';
 import { useLanguage } from '@/stores/languages';
 import { computed } from 'vue';
 
@@ -28,7 +30,7 @@ const textContent = computed(() => {
         <h1 class="text-4xl uppercase font-secondary font-bold shadow-none">
           Carlos Alves
         </h1>
-        <h2 class="text-2xl text-secondary-accent font-semibold">
+        <h2 class="text-3xl text-secondary-accent font-semibold">
           {{ textContent.role }}
         </h2>
       </div>
@@ -50,11 +52,32 @@ const textContent = computed(() => {
       id="About"
       class="content-section p-2 relative"
     >
-      <h2 class="mt-12 mb-6 text-2xl font-semibold font-secondary text-center">
+      <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
         {{ textContent.introducing }}
       </h2>
-      <div class="main-section-content site-presentation absolute flex items-center mx-auto">
+      <div class="main-section-content site-presentation absolute flex items-center mx-auto px-4 mt-16 md:mt-0">
         <component :is="AuthorCard" />
+      </div>
+    </section>
+    <hr class="mt-12 mx-4">
+    <section
+      id="Projects"
+      class="content-section relative"
+    >
+      <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
+        {{ textContent.projects }}
+      </h2>
+      <div class="projects-container main-section-content absolute flex flex-col md:flex-row gap-2 md:gap-6 mb-6 items-center mt-28 md:mt-0">
+        <component
+          v-for="project in projects"
+          :key="project.title"
+          :is="ProjectCard"
+          :title="project.title"
+          :description="project.description"
+          :image="project.image"
+          :repository="project.repo"
+          :demo="project.link"
+        />
       </div>
     </section>
   </main>
@@ -81,6 +104,12 @@ const textContent = computed(() => {
 
   h2 {
     color: darken(#F39C12, 10);
+  }
+}
+
+.project-card:nth-child(2) {
+  @media (min-width: 768px) {
+    margin-top: 150px;
   }
 }
 </style>
