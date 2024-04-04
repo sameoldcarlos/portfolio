@@ -1,4 +1,5 @@
 <script setup>
+import AuthorCard from '@/components/AuthorCard.vue';
 import NavBar from '@/components/NavBar.vue';
 import { networks } from '@/content/networks.json';
 import content from '@/content/content.json';
@@ -14,9 +15,9 @@ const textContent = computed(() => {
 
 <template>
   <main>
-    <section class="content-section bg-gradient-to-b from-secondary-bg relative flex flex-col items-center">
+    <section class="content-section bg-gradient-to-b from-secondary-bg relative">
       <component :is="NavBar" />
-      <div class="site-presentation flex flex-col items-center justify-center absolute">
+      <div class="main-section-content site-presentation flex flex-col items-center justify-center absolute">
         <div class="logo-container max-w-md mt-28">
           <img
             src="@/assets/logo-dark.svg"
@@ -44,15 +45,34 @@ const textContent = computed(() => {
         </a>
       </div>
     </section>
+    <hr class="mt-12 mx-4">
+    <section
+      id="About"
+      class="content-section p-2 relative"
+    >
+      <h2 class="mt-12 mb-6 text-2xl font-semibold font-secondary text-center">
+        {{ textContent.introducing }}
+      </h2>
+      <div class="main-section-content site-presentation absolute flex items-center mx-auto">
+        <component :is="AuthorCard" />
+      </div>
+    </section>
   </main>
 </template>
 
 <style scoped lang="stylus">
 .content-section,
-.site-presentation {
+.main-section-content {
   height: 100vh;
   min-height: 800px;
 }
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .site-presentation {
   h1 {

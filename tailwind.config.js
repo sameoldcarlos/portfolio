@@ -9,7 +9,11 @@ module.exports = {
       'primary-bg': 'var(--background-primary)',
       'secondary-bg': 'var(--background-secondary)',
       'primary-accent': 'var(--highlight-primary)',
-      'secondary-accent': 'var(--highlight-secondary)'
+      'secondary-accent': 'var(--highlight-secondary)',
+      'description-header': 'var(--description-header)',
+      'description-border': 'var(--description-border)',
+      'success': 'var(--success)',
+      'card-bg': 'var(--card-background)',
     },
     fontFamily: {
       'primary': 'var(--primary-font-family)',

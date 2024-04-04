@@ -38,7 +38,7 @@ function switchLanguage(translate) {
 </script>
 
 <template>
-  <nav class="text-secondary-text w-full">
+  <nav class="text-secondary-text w-full absolute z-10">
     <div class="flex justify-between p-2">
       <button
         class="lg:hidden rounded-md"
