@@ -1,36 +1,48 @@
 {
   "skills": [
     {
-      "title": "Skill 1",
-      "icon": "icon.png"
+      "title": "bootstrap",
+      "icon": "/images/skills/bootstrap.svg"
     },
     {
-      "title": "Skill 2",
-      "icon": "icon.png"
+      "title": "css3",
+      "icon": "/images/skills/css3.svg"
     },
     {
-      "title": "Skill 3",
-      "icon": "icon.png"
+      "title": "git",
+      "icon": "/images/skills/git.svg"
     },
     {
-      "title": "Skill 4",
-      "icon": "icon.png"
+      "title": "html5",
+      "icon": "/images/skills/html5.svg"
     },
     {
-      "title": "Skill 5",
-      "icon": "icon.png"
+      "title": "javascript",
+      "icon": "/images/skills/javascript.svg"
     },
     {
-      "title": "Skill 6",
-      "icon": "icon.png"
+      "title": "laravel",
+      "icon": "/images/skills/laravel.svg"
     },
     {
-      "title": "Skill 7",
-      "icon": "icon.png"
+      "title": "php",
+      "icon": "/images/skills/php.svg"
     },
     {
-      "title": "Skill 8",
-      "icon": "icon.png"
+      "title": "sass",
+      "icon": "/images/skills/sass.svg"
+    },
+    {
+      "title": "stylus",
+      "icon": "/images/skills/stylus.svg"
+    },
+    {
+      "title": "typescript",
+      "icon": "/images/skills/typescript.svg"
+    },
+    {
+      "title": "vuejs",
+      "icon": "/images/skills/vue.svg"
     }
   ]
 }

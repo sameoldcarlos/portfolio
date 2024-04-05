@@ -10,8 +10,8 @@ const props = defineProps({
     default: ''
   },
   description: {
-    type: String,
-    default: ''
+    type: Object,
+    default: () => ({})
   },
   image: {
     type: String,

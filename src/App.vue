@@ -2,16 +2,23 @@
 import AuthorCard from '@/components/AuthorCard.vue';
 import NavBar from '@/components/NavBar.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
+import SkillCard from '@/components/SkillCard.vue';
 import { networks } from '@/content/networks.json';
+import { skills } from '@/content/skills.json';
 import content from '@/content/content.json';
 import { projects } from '@/content/projects.json';
 import { useLanguage } from '@/stores/languages';
-import { computed } from 'vue';
+import { swiffyslider } from 'swiffy-slider';
+import { computed, onMounted } from 'vue';
 
 const store = useLanguage();
 
 const textContent = computed(() => {
   return content[store.language];
+});
+
+onMounted(() => {
+  swiffyslider.init();
 });
 </script>
 
@@ -67,7 +74,9 @@ const textContent = computed(() => {
       <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
         {{ textContent.projects }}
       </h2>
-      <div class="projects-container main-section-content absolute flex flex-col md:flex-row gap-2 md:gap-6 mb-6 items-center mt-28 md:mt-0">
+      <div
+        class="projects-container main-section-content absolute flex flex-col md:flex-row gap-2 md:gap-6 mb-6 items-center mt-28 md:mt-0 overflow-scroll"
+      >
         <component
           v-for="project in projects"
           :key="project.title"
@@ -80,10 +89,61 @@ const textContent = computed(() => {
         />
       </div>
     </section>
+    <hr class="mt-32 lg:mt-12 mx-4">
+    <section
+      id="Skills"
+      class="content-section relative"
+    >
+      <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
+        {{ textContent.skills }}
+      </h2>
+      <div class="main-section-content site-presentation flex flex-col items-center justify-center w-full absolute px-2">
+        <div
+          class="swiffy-slider slider-nav-outside slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart .slider-item-nogap slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x32 .slider-item-reveal bg-secondary-bg rounded-md w-full max-w-[1200px] min-h-[150px] shadow-lg py-3 py-lg-4"
+          data-slider-nav-autoplay-interval="2000"
+        >
+          <div class="slider-container">
+            <component
+              v-for="skill in skills"
+              :key="skill.title"
+              :is="SkillCard"
+              :title="skill.title"
+              :icon="skill.icon"
+            />
+          </div>
+          <button
+            type="button"
+            class="slider-nav"
+            aria-label="Go left"
+          />
+          <button
+            type="button"
+            class="slider-nav slider-nav-next"
+            aria-label="Go left"
+          />
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <style scoped lang="stylus">
+.swiffy-slider {
+  --swiffy-slider-item-count: 1;
+
+  @media (min-width: 285px) {
+    --swiffy-slider-item-count: 2;
+  }
+
+  @media (min-width: 768px) {
+    --swiffy-slider-item-count: 3;
+  }
+
+  @media (min-width: 1200px) {
+    --swiffy-slider-item-count: 4;
+  }
+}
+
 .content-section,
 .main-section-content {
   height: 100vh;

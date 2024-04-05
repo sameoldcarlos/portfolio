@@ -15,6 +15,7 @@
     "pinia": "^2.1.7",
     "stylus": "^0.63.0",
     "stylus-loader": "^8.1.0",
+    "swiffy-slider": "^1.6.0",
     "vue": "^3.4.21",
     "vue-feather": "^2.0.0"
   },

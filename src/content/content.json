@@ -1,7 +1,7 @@
 {
   "en": {
     "projects": "Projects",
-    "skills": "Skills",
+    "skills": "Technical Skills",
     "experience": "Experience",
     "contact": "Contact",
     "engineer": "Engineer",
@@ -15,7 +15,7 @@
 
   "es": {
     "projects": "Proyectos",
-    "skills": "Habilidades",
+    "skills": "Habilidades Técnicas",
     "experience": "Experiencia",
     "contact": "Contacto",
     "engineer": "Ingeniero",
@@ -29,7 +29,7 @@
 
   "pt": {
     "projects": "Projetos",
-    "skills": "Habilidades",
+    "skills": "Habilidades Técnicas",
     "experience": "Experiência",
     "contact": "Contato",
     "engineer": "Engenheiro",
