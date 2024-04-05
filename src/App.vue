@@ -128,6 +128,14 @@ onMounted(() => {
 </template>
 
 <style scoped lang="stylus">
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+section {
+  scroll-snap-align: start;
+}
 .swiffy-slider {
   --swiffy-slider-item-count: 1;
 

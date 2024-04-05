@@ -14,6 +14,7 @@ defineProps({
   <div class="skill-card rounded-md bg-primary-text opacity-7 p-2">
     <img
       class="mt-2 lg:mt-4"
+      loading="lazy"
       :src="icon"
       :alt="title"
     >
