@@ -269,6 +269,7 @@ section {
 .main-section-content {
   height: 100vh;
   min-height: 800px;
+  overflow-y: scroll;
 }
 
 .content-section {
