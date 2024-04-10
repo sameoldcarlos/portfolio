@@ -243,13 +243,18 @@ onMounted(() => {
 
 <style scoped lang="stylus">
 main {
-  scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
   scroll-behavior: smooth;
+
+  @media (min-width: 992px) {
+    scroll-snap-type: y mandatory;
+  }
 }
 section {
-  scroll-snap-align: start;
+  @media (min-width: 992px) {
+    scroll-snap-align: start;
+  }
 }
 .swiffy-slider {
   --swiffy-slider-item-count: 1;
