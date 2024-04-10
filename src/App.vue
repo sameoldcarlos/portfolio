@@ -276,6 +276,12 @@ section {
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content-section::-webkit-scrollbar {
+  display: none;
 }
 
 
