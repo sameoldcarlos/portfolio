@@ -278,6 +278,7 @@ section {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .content-section::-webkit-scrollbar {
