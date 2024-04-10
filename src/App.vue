@@ -269,13 +269,13 @@ section {
 .main-section-content {
   height: 100vh;
   min-height: 800px;
-  overflow-y: scroll;
 }
 
 .content-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
 }
 
 
