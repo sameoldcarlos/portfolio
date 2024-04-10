@@ -30,8 +30,10 @@ const textContent = computed(() => {
           class="author-card__actions flex flex-col md:flex-row items-center justify-center text-xl gap-4 mt-6 w-full"
         >
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1xSHtfBw7qW8AyVy9MoIjcy8mBBPxQcU6/view?usp=sharing"
             class="block text-center w-full max-w-[250px] border-2 rounded-md hover:border-primary-accent hover:text-primary-accent py-1"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
           >
             {{ textContent.resume }}
           </a>
