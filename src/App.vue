@@ -64,7 +64,9 @@ onMounted(() => {
 
 <template>
   <main>
-    <div :class="['menu-overlay absolute w-screen h-screen bg-secondary-text opacity-50', [menuStore.isMenuOpen ? 'block z-40' : 'hidden z-0']]" />
+    <div
+      :class="['menu-overlay absolute w-screen h-screen bg-secondary-text opacity-50', [menuStore.isMenuOpen ? 'block z-40' : 'hidden z-0']]"
+    />
     <component :is="MobileMenu" />
     <section class="content-section bg-gradient-to-b from-secondary-bg relative">
       <component :is="NavBar" />
@@ -83,7 +85,7 @@ onMounted(() => {
           {{ textContent.role }}
         </h2>
       </div>
-      <div class="networks-container flex gap-4 mt-12 absolute bottom-0 mb-3">
+      <div class="networks-container flex gap-4 mt-12 absolute bottom-0 mb-11 lg:mb-3">
         <a
           v-for="network in networks"
           :key="network.name"
@@ -118,7 +120,7 @@ onMounted(() => {
         {{ textContent.projects }}
       </h2>
       <div
-        class="projects-container main-section-content absolute flex flex-col lg:flex-row gap-2 lg:gap-6 mb-6 items-center mt-28 lg:mt-0 overflow-scroll"
+        class="projects-container main-section-content absolute flex flex-col lg:flex-row gap-2 lg:gap-6 mb-6 pb-11 lg:pb-0 items-center mt-28 lg:mt-0 overflow-scroll"
       >
         <component
           v-for="project in projects"

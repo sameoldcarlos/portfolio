@@ -39,11 +39,17 @@ const projectDescription = computed(() => {
       class="lg:group-hover:opacity-5 project-card__main-content w-full flex flex-col-reverse md:flex-col justify-center items-center px-2 py-2 md:py-6 transition-opacity ease-in-out gap-4"
     >
       <div class="image-container w-[247px] h-[140px] md:h-[247px]">
-        <img
-          :src="image"
-          alt="Project Image"
-          class="h-full w-full object-cover"
+        <a
+          :href="demo"
+          class="hover:text-primary-accent"
+          target="_blank"
         >
+          <img
+            :src="image"
+            alt="Project Image"
+            class="h-full w-full object-cover"
+          >
+        </a>
       </div>
       <h3 class="uppercase mt-4 text-secondary-accent text-lg font-bold md:font-normal md:text-primary-text">
         {{ title }}
