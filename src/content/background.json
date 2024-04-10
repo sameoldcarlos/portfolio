@@ -2,70 +2,70 @@
   "experiences": {
     "en": [
       {
-        "position": "Experience 1",
-        "company": "Company 1",
-        "period": "2018 - 2019",
-        "description": "Description 1"
+        "position": "Frontend Developer",
+        "company": " MELHOR ENVIO LTDA",
+        "period": "aug/2022 - current",
+        "description": " Development of new frontend features to the  company platform, delivering finantial related tasks."
       },
 
       {
-        "position": "Experience 2",
-        "company": "Company 2",
-        "period": "2017 - 2018",
-        "description": "Description 2"
+        "position": "Frontend Developer Jr",
+        "company": "E-COM PLUS SOFTWARES PARA E-COMMERCE",
+        "period": "oct/2021 - aug/2022",
+        "description": " Development of new frontend features on Storefront e-commerce platform."
       },
 
       {
-        "position": "Experience 3",
-        "company": "Company 3",
-        "period": "2016 - 2017",
-        "description": "Description 3"
+        "position": "Web Developer - Internship",
+        "company": "VASTA DESIGN E ADMINISTRACAO WEB LTDA",
+        "period": "mar - oct/2021",
+        "description": "Documentation and small bug fixes on company's Shopify theme."
       }
     ],
 
     "es": [
       {
-        "position": "Experiencia 1",
-        "company": "Compañía 1",
-        "period": "2018 - 2019",
-        "description": "Descripción 1"
+        "position": "Desarrollador Frontend",
+        "company": "MELHOR ENVIO LTDA",
+        "period": "ago/2022 - actual",
+        "description": "Desarrollo de nuevas funcionalidades en el frontend de la plataforma de la empresa, entregando tareas relacionadas con finanzas."
       },
 
       {
-        "position": "Experiencia 2",
-        "company": "Compañía 2",
-        "period": "2017 - 2018",
-        "description": "Descripción 2"
+        "position": "Desarrollador Frontend Jr",
+        "company": "E-COM PLUS SOFTWARES PARA E-COMMERCE",
+        "period": "oct/2021 - ago/2022",
+        "description": "Desarrollo de nuevas funcionalidades en el frontend de la plataforma de comercio electrónico Storefront."
       },
 
       {
-        "position": "Experiencia 3",
-        "company": "Compañía 3",
-        "period": "2016 - 2017",
-        "description": "Descripción 3"
+        "position": "Desarrollador Web - Prácticas",
+        "company": "VASTA DESIGN E ADMINISTRACAO WEB LTDA",
+        "period": "mar - oct/2021",
+        "description": "Documentación y pequeñas correcciones de errores en el tema Shopify de la empresa."
       }
     ],
 
     "pt": [
       {
-        "position": "Experiência 1",
-        "company": "Empresa 1",
-        "period": "2018 - 2019",
-        "description": "Descrição 1"
+        "position": "Desenvolvedor Frontend",
+        "company": "MELHOR ENVIO LTDA",
+        "period": "ago/2022 - atual",
+        "description": "Desenvolvimento de novas funcionalidades no frontend da plataforma da empresa, entregando tarefas relacionadas  voltadas para o nicho financeiro."
       },
 
       {
-        "position": "Experiência 2",
-        "company": "Empresa 2",
-        "period": "2017 - 2018",
-        "description": "Descrição 2"
+        "position": "Desenvolvedor Frontend Jr",
+        "company": "E-COM PLUS SOFTWARES PARA E-COMMERCE",
+        "period": "out/2021 - ago/2022",
+        "description": "Desenvolvimento de novas funcionalidades no frontend da plataforma de e-commerce Storefront."
       },
 
       {
-        "position": "Experiência 3",
-        "company": "Empresa 3",
-        "period": "2016 - 2017",
-        "description": "Descrição 3"
+        "position": "Desenvolvedor Web - Estágio",
+        "company": "VASTA DESIGN E ADMINISTRACAO WEB LTDA",
+        "period": "mar/2021 - out/2021",
+        "description": "Documentação e pequenas correções de bugs no tema Shopify da empresa."
       }
     ]
   }

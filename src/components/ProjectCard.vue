@@ -36,7 +36,7 @@ const projectDescription = computed(() => {
     class="project-card relative w-full max-w-[300px] h-fit drop-shadow-md rounded-sm border-2 border-description-border group cursor-pointer"
   >
     <div
-      class="group-hover:opacity-5 project-card__main-content w-full flex flex-col-reverse md:flex-col justify-center items-center px-2 py-2 md:py-6 transition-opacity ease-in-out gap-4"
+      class="lg:group-hover:opacity-5 project-card__main-content w-full flex flex-col-reverse md:flex-col justify-center items-center px-2 py-2 md:py-6 transition-opacity ease-in-out gap-4"
     >
       <div class="image-container w-[247px] h-[140px] md:h-[247px]">
         <img
@@ -50,7 +50,7 @@ const projectDescription = computed(() => {
       </h3>
     </div>
     <div
-      class="opacity-0 group-hover:opacity-100 z-[-1] group-hover:z-10 flex absolute top-0 bg-gradient-to-b from-secondary-accent from-10% w-full h-full px-2 py-6 flex-col transition-opacity ease-in-out"
+      class="opacity-0 lg:group-hover:opacity-100 z-[-1] lg:group-hover:z-10 flex absolute top-0 bg-gradient-to-b from-secondary-accent from-10% w-full h-full px-2 py-6 flex-col transition-opacity ease-in-out"
     >
       <p class="text-secondary-text text-center">
         {{ projectDescription }}
@@ -78,10 +78,10 @@ const projectDescription = computed(() => {
         </a>
       </div>
     </div>
-    <p class="md:hidden text-center mb-6 p-2">
+    <p class="lg:hidden text-center mb-6 p-2">
       {{ projectDescription }}
     </p>
-    <div class="links flex md:hidden gap-2 justify-center">
+    <div class="links flex lg:hidden gap-2 justify-center">
       <a
         :href="repository"
         target="_blank"

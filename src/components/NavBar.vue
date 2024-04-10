@@ -79,8 +79,8 @@ function switchLanguage(translate) {
           :key="option.id"
           class="hover:text-secondary-accent"
         >
-          <a :href="`#${option}`">
-            <span>{{ option }}</span>
+          <a :href="option.link">
+            <span>{{ option.title }}</span>
           </a>
         </li>
       </ul>

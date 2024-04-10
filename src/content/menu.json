@@ -1,25 +1,70 @@
 {
   "options": {
     "en": [
-      "About",
-      "Projects",
-      "Skills",
-      "Experience",
-      "Contact"
+      {
+        "title": "About",
+        "link": "#about"
+      },
+      {
+        "title": "Projects",
+        "link": "#projects"
+      },
+      {
+        "title": "Skills",
+        "link": "#skills"
+      },
+      {
+        "title": "Experience",
+        "link": "#experience"
+      },
+      {
+        "title": "Contact",
+        "link": "#contact"
+      }
     ],
     "es": [
-      "Sobre",
-      "Proyectos",
-      "Habilidades",
-      "Experiencia",
-      "Contacto"
+      {
+        "title": "Sobre",
+        "link": "#about"
+      },
+      {
+        "title": "Proyectos",
+        "link": "#projects"
+      },
+      {
+        "title": "Habilidades",
+        "link": "#skills"
+      },
+      {
+        "title": "Experiencia",
+        "link": "#experience"
+      },
+      {
+        "title": "Contacto",
+        "link": "#contact"
+      }
     ],
     "pt": [
-      "Sobre",
-      "Projetos",
-      "Habilidades",
-      "Experiência",
-      "Contato"
+      {
+        "title": "Sobre",
+        "link": "#about"
+      },
+      {
+        "title": "Projetos",
+        "link": "#projects"
+      },
+      {
+        "title": "Habilidades",
+        "link": "#skills"
+      },
+      {
+        "title": "Experiência",
+        "link": "#experience"
+      },
+      {
+        "title": "Contato",
+        "link": "#contact"
+      }
     ]
   }
 }

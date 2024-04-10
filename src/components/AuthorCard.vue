@@ -36,7 +36,7 @@ const textContent = computed(() => {
             {{ textContent.resume }}
           </a>
           <a
-            href="#Projects"
+            href="#projects"
             class="bg-gradient-to-bl from-success to-card-bg hover:to-primary-bg hover:to-0% rounded-md text-secondary-text px-4 py-1 uppercase block text-center w-full max-w-[250px] border-success border-2 hover:text-success"
           >
             {{ textContent.projects }}

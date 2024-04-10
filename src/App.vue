@@ -3,6 +3,7 @@ import AuthorCard from '@/components/AuthorCard.vue';
 import NavBar from '@/components/NavBar.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import SkillCard from '@/components/SkillCard.vue';
+import ExperienceTimeline from '@/components/ExperienceTimeline.vue';
 import { networks } from '@/content/networks.json';
 import { skills } from '@/content/skills.json';
 import content from '@/content/content.json';
@@ -56,7 +57,7 @@ onMounted(() => {
     </section>
     <hr class="mt-12 mx-4">
     <section
-      id="About"
+      id="about"
       class="content-section p-2 relative"
     >
       <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
@@ -68,14 +69,14 @@ onMounted(() => {
     </section>
     <hr class="mt-12 mx-4">
     <section
-      id="Projects"
+      id="projects"
       class="content-section relative"
     >
       <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
         {{ textContent.projects }}
       </h2>
       <div
-        class="projects-container main-section-content absolute flex flex-col md:flex-row gap-2 md:gap-6 mb-6 items-center mt-28 md:mt-0 overflow-scroll"
+        class="projects-container main-section-content absolute flex flex-col lg:flex-row gap-2 lg:gap-6 mb-6 items-center mt-28 lg:mt-0 overflow-scroll"
       >
         <component
           v-for="project in projects"
@@ -91,13 +92,15 @@ onMounted(() => {
     </section>
     <hr class="mt-32 lg:mt-12 mx-4">
     <section
-      id="Skills"
+      id="skills"
       class="content-section relative"
     >
       <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
         {{ textContent.skills }}
       </h2>
-      <div class="main-section-content site-presentation flex flex-col items-center justify-center w-full absolute px-2">
+      <div
+        class="main-section-content site-presentation flex flex-col items-center justify-center w-full absolute px-2"
+      >
         <div
           class="swiffy-slider slider-nav-outside slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart .slider-item-nogap slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x32 .slider-item-reveal bg-secondary-bg rounded-md w-full max-w-[1200px] min-h-[150px] shadow-lg py-3 py-lg-4"
           data-slider-nav-autoplay-interval="2000"
@@ -124,6 +127,19 @@ onMounted(() => {
         </div>
       </div>
     </section>
+    <section
+      id="experience"
+      class="content-section relative"
+    >
+      <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
+        {{ textContent.experience }}
+      </h2>
+      <div
+        class="main-section-content absolute flex flex-col md:flex-row gap-2 md:gap-6 mb-6 items-center mt-28 overflow-scroll"
+      >
+        <ExperienceTimeline />
+      </div>
+    </section>
   </main>
 </template>
 
@@ -132,6 +148,7 @@ main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 section {
   scroll-snap-align: start;
@@ -176,7 +193,7 @@ section {
 }
 
 .project-card:nth-child(2) {
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     margin-top: 150px;
   }
 }
