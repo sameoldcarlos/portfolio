@@ -4,6 +4,7 @@ import NavBar from '@/components/NavBar.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import SkillCard from '@/components/SkillCard.vue';
 import ExperienceTimeline from '@/components/ExperienceTimeline.vue';
+import MobileMenu from '@/components/MobileMenu.vue';
 import { networks } from '@/content/networks.json';
 import { skills } from '@/content/skills.json';
 import content from '@/content/content.json';
@@ -11,8 +12,46 @@ import { projects } from '@/content/projects.json';
 import { useLanguage } from '@/stores/languages';
 import { swiffyslider } from 'swiffy-slider';
 import { computed, onMounted } from 'vue';
+import { useMobileMenu } from '@/stores/mobile-menu';
+
+const menuStore = useMobileMenu();
 
 const store = useLanguage();
+
+const emailAddress = 'carlospereira.webdev@gmail.com';
+
+const emailMessage = {
+  en: {
+    subject: 'Contact from Portfolio',
+    body: 'Hello Carlos, I found your portfolio and I would like to talk to you about...'
+  },
+  es: {
+    subject: 'Contacto desde el Portafolio',
+    body: 'Hola Carlos, encontré tu portafolio y me gustaría hablar contigo sobre...'
+  },
+  pt: {
+    subject: 'Contato pelo Portfólio',
+    body: 'Olá Carlos, encontrei seu portfólio e gostaria de falar com você sobre...'
+  }
+};
+
+const whatsappNumber = '+5577988723301';
+
+const whatsappMessage = {
+  en:'Hello Carlos, I found your portfolio and I would like to talk to you about...',
+  es: 'Hola Carlos, encontré tu portafolio y me gustaría hablar contigo sobre...',
+  pt: 'Olá Carlos, encontrei seu portfólio e gostaria de falar com você sobre...'
+};
+
+const whatsappHref = computed(() => {
+  return `https://wa.me/${whatsappNumber}?text=${whatsappMessage[store.language]}`;
+});
+
+const emailHref = computed(() => {
+  const { subject, body } = emailMessage[store.language];
+
+  return `mailto:${emailAddress}?subject=${subject}&body=${body}`;
+});
 
 const textContent = computed(() => {
   return content[store.language];
@@ -25,6 +64,8 @@ onMounted(() => {
 
 <template>
   <main>
+    <div :class="['menu-overlay absolute w-screen h-screen bg-secondary-text opacity-50', [menuStore.isMenuOpen ? 'block z-40' : 'hidden z-0']]" />
+    <component :is="MobileMenu" />
     <section class="content-section bg-gradient-to-b from-secondary-bg relative">
       <component :is="NavBar" />
       <div class="main-section-content site-presentation flex flex-col items-center justify-center absolute">
@@ -42,7 +83,7 @@ onMounted(() => {
           {{ textContent.role }}
         </h2>
       </div>
-      <div class="networks-container flex gap-2 mt-12 absolute bottom-0">
+      <div class="networks-container flex gap-4 mt-12 absolute bottom-0 mb-3">
         <a
           v-for="network in networks"
           :key="network.name"
@@ -51,6 +92,7 @@ onMounted(() => {
           <vue-feather
             :type="network.icon"
             class="text-3xl hover:text-primary-accent"
+            size="32"
           />
         </a>
       </div>
@@ -127,9 +169,10 @@ onMounted(() => {
         </div>
       </div>
     </section>
+    <hr class="mt-32 lg:mt-12 mx-4">
     <section
       id="experience"
-      class="content-section relative"
+      class="content-section relative mb-[250px]"
     >
       <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
         {{ textContent.experience }}
@@ -138,6 +181,59 @@ onMounted(() => {
         class="main-section-content absolute flex flex-col md:flex-row gap-2 md:gap-6 mb-6 items-center mt-28 overflow-scroll"
       >
         <ExperienceTimeline />
+      </div>
+    </section>
+    <hr class="mt-32 lg:mt-12 mx-4">
+    <section
+      id="contact"
+      class="content-section relative"
+    >
+      <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
+        {{ textContent.contact }}
+      </h2>
+      <div
+        class="main-section-content flex flex-col gap-8 md:gap-0 md:flex-row items-center md:justify-around absolute mt-48 md:mt-0 w-full max-w-[1200px]"
+      >
+        <h3 class="text-2xl max-w-[300px]">
+          {{ textContent.any_questions }}
+        </h3>
+        <div class="networks-container flex flex-col gap-4">
+          <a
+            v-for="network in networks"
+            :key="network.name"
+            :href="network.url"
+            :class="['flex gap-2 items-end', [network.name === 'Twitter' ? 'hidden' : '']]"
+          >
+            <vue-feather
+              :type="network.icon"
+              class="text-3xl hover:text-primary-accent"
+              size="32"
+            />
+            <p>{{ network.username }}</p>
+          </a>
+          <a
+            :href="emailHref"
+            class="flex gap-2 items-end"
+          >
+            <vue-feather
+              type="mail"
+              class="text-3xl hover:text-primary-accent"
+              size="32"
+            />
+            <p>{{ emailAddress }}</p>
+          </a>
+          <a
+            :href="whatsappHref"
+            class="flex gap-2 items-end"
+          >
+            <vue-feather
+              type="phone"
+              class="text-3xl hover:text-primary-accent"
+              size="32"
+            />
+            <p>{{ whatsappNumber }}</p>
+          </a>
+        </div>
       </div>
     </section>
   </main>

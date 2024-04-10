@@ -6,10 +6,10 @@
     "contact": "Contact",
     "engineer": "Engineer",
     "role": "Frontend Engineer",
-    "introducing": "Hi, I am Carlos",
-    "author_bio": "I am a software engineer with a passion for technology and innovation. I have experience in web development, mobile development, and cloud computing. I am always looking for new challenges and opportunities to learn and grow.",
+    "introducing": "Hello there, I am Carlos",
+    "author_bio": "I am a software engineer with a passion for technology and innovation. I have about 4 years of experience in web development, working most of the time with Frontend development. Besides that, I also have a Bachelor's degree in Computer Science. I am always looking for new challenges and opportunities to learn and grow.",
     "resume": "Resume",
-    "any_questions": "Any aditional questions? Get in touch!",
+    "any_questions": "Any questions? Feel free to contact me!",
     "switch_language": "Switch language"
   },
 
@@ -21,9 +21,9 @@
     "engineer": "Ingeniero",
     "role": "Ingeniero Frontend",
     "introducing": "Hola, soy Carlos",
-    "author_bio": "Soy un ingeniero de software con pasión por la tecnología y la innovación. Tengo experiencia en desarrollo web, desarrollo móvil y computación en la nube. Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer.",
+    "author_bio": "Soy un ingeniero de software con pasión por la tecnología y la innovación. Tengo alrededor de 4 años de experiencia en desarrollo web, trabajando la mayor parte del tiempo con desarrollo Frontend. Además de eso, también tengo una licenciatura en Ciencias de la Computación. Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer.",
     "resume": "Currículum",
-    "any_questions": "¿Alguna pregunta adicional? ¡Ponte en contacto!",
+    "any_questions": "¿Alguna pregunta? ¡No dudes en contactarme!",
     "switch_language": "Cambiar idioma"
   },
 
@@ -34,10 +34,10 @@
     "contact": "Contato",
     "engineer": "Engenheiro",
     "role": "Desenvolvedor Frontend",
-    "introducing": "Olá, eu sou Carlos",
-    "author_bio": "Sou um engenheiro de software com paixão por tecnologia e inovação. Tenho experiência em desenvolvimento web, desenvolvimento móvel e computação em nuvem. Estou sempre procurando novos desafios e oportunidades para aprender e crescer.",
+    "introducing": "Olá, eu sou o Carlos",
+    "author_bio": "Sou um engenheiro de software com paixão por tecnologia e inovação. Tenho cerca de 4 anos de experiência em desenvolvimento web, trabalhando a maior parte do tempo com desenvolvimento Frontend. Além disso, também tenho graduação em Ciência da Computação. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer.",
     "resume": "Currículo",
-    "any_questions": "Alguma pergunta adicional? Entre em contato!",
+    "any_questions": "Restou alguma dúvida ou deseja conversar comigo? Sinta-se à vontade para entrar em contato!",
     "switch_language": "Mudar idioma"
   }
 }

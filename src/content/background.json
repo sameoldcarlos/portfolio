@@ -18,8 +18,15 @@
       {
         "position": "Web Developer - Internship",
         "company": "VASTA DESIGN E ADMINISTRACAO WEB LTDA",
-        "period": "mar - oct/2021",
+        "period": "mar/2021 - oct/2021",
         "description": "Documentation and small bug fixes on company's Shopify theme."
+      },
+
+      {
+        "position": "Web Developer - Internship",
+        "company": "MAQUINARAMA CREATIVE DIGITAL STUDIO",
+        "period": "feb/2021 - feb/2021",
+        "description": "Development of new features for commercial systems."
       }
     ],
 
@@ -41,8 +48,15 @@
       {
         "position": "Desarrollador Web - Prácticas",
         "company": "VASTA DESIGN E ADMINISTRACAO WEB LTDA",
-        "period": "mar - oct/2021",
+        "period": "mar/2021 - oct/2021",
         "description": "Documentación y pequeñas correcciones de errores en el tema Shopify de la empresa."
+      },
+
+      {
+        "position": "Desarrollador Web - Prácticas",
+        "company": "MAQUINARAMA CREATIVE DIGITAL STUDIO",
+        "period": "feb/2021 - feb/2021",
+        "description": "Desarrollo de nuevas funcionalidades para sistemas comerciales."
       }
     ],
 
@@ -66,6 +80,13 @@
         "company": "VASTA DESIGN E ADMINISTRACAO WEB LTDA",
         "period": "mar/2021 - out/2021",
         "description": "Documentação e pequenas correções de bugs no tema Shopify da empresa."
+      },
+
+      {
+        "position": "Desenvolvedor Web - Estágio",
+        "company": "MAQUINARAMA CREATIVE DIGITAL STUDIO",
+        "period": "fev/2021 - fev/2021",
+        "description": "Desenvolvimento de novas features para sistemas comerciais."
       }
     ]
   }

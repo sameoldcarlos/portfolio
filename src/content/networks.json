@@ -3,17 +3,20 @@
     "twitter": {
       "name": "Twitter",
       "icon": "twitter",
-      "url": "https://twitter.com/sameoldcarlos"
+      "url": "https://twitter.com/sameoldcarlos",
+      "username": "/sameoldcarlos"
     },
     "github": {
       "name": "GitHub",
       "icon": "github",
-      "url": "https://github.com/sameoldcarlos"
+      "url": "https://github.com/sameoldcarlos",
+      "username": "/sameoldcarlos"
     },
     "linkedin": {
       "name": "LinkedIn",
       "icon": "linkedin",
-      "url": "https://www.linkedin.com/in/sameoldcarlos"
+      "url": "https://www.linkedin.com/in/carlos-alves-webdev",
+      "username": "/in/carlos-alves-webdev"
     }
   }
 }
