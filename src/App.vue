@@ -107,7 +107,7 @@ onMounted(() => {
       <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
         {{ textContent.introducing }}
       </h2>
-      <div class="main-section-content site-presentation absolute flex items-center mx-auto px-4 mt-16 md:mt-0">
+      <div class="main-section-content site-presentation lg:absolute flex items-center mx-auto px-4 mt-16 md:mt-0">
         <component :is="AuthorCard" />
       </div>
     </section>
@@ -120,7 +120,7 @@ onMounted(() => {
         {{ textContent.projects }}
       </h2>
       <div
-        class="projects-container main-section-content absolute flex flex-col lg:flex-row gap-2 lg:gap-6 mb-6 pb-11 lg:pb-0 items-center mt-28 lg:mt-0 overflow-scroll"
+        class="projects-container main-section-content lg:absolute flex flex-col lg:flex-row gap-2 lg:gap-6 mb-6 pb-11 lg:pb-0 items-center mt-28 lg:mt-0 lg:overflow-scroll"
       >
         <component
           v-for="project in projects"
@@ -174,13 +174,13 @@ onMounted(() => {
     <hr class="mt-32 lg:mt-12 mx-4">
     <section
       id="experience"
-      class="content-section relative mb-[250px]"
+      class="content-section relative lg:mb-[250px]"
     >
       <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
         {{ textContent.experience }}
       </h2>
       <div
-        class="main-section-content absolute flex flex-col md:flex-row gap-2 md:gap-6 mb-6 items-center mt-28 overflow-scroll"
+        class="main-section-content lg:absolute flex flex-col md:flex-row gap-2 md:gap-6 mb-6 items-center mt-28 lg:overflow-scroll"
       >
         <ExperienceTimeline />
       </div>
@@ -241,48 +241,25 @@ onMounted(() => {
   </main>
 </template>
 
-<style scoped lang="stylus">
+<style scoped>
 main {
   overflow-y: scroll;
-  height: 100vh;
   scroll-behavior: smooth;
+}
 
-  @media (min-width: 992px) {
-    scroll-snap-type: y mandatory;
-  }
-}
-section {
-  @media (min-width: 992px) {
-    scroll-snap-align: start;
-  }
-}
 .swiffy-slider {
   --swiffy-slider-item-count: 1;
-
-  @media (min-width: 285px) {
-    --swiffy-slider-item-count: 2;
-  }
-
-  @media (min-width: 768px) {
-    --swiffy-slider-item-count: 3;
-  }
-
-  @media (min-width: 1200px) {
-    --swiffy-slider-item-count: 4;
-  }
 }
 
 .content-section,
 .main-section-content {
-  height: 100vh;
-  min-height: 800px;
+  min-height: max(100vh, 800px);
 }
 
 .content-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
@@ -292,19 +269,56 @@ section {
   display: none;
 }
 
-
 .site-presentation {
   h1 {
-    color: darken(#3498DB, 10);
+    color: var(--highlight-primary);
   }
 
   h2 {
-    color: darken(#F39C12, 10);
+    color: var(--highlight-secondary);
   }
 }
 
-.project-card:nth-child(2) {
-  @media (min-width: 1024px) {
+@media (min-width: 992px) {
+  main,
+  .content-section,
+  .main-section-content {
+    height: 100vh;
+  }
+
+  main {
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    scroll-snap-align: start;
+  }
+
+  .content-section {
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 285px) {
+  .swiffy-slider {
+    --swiffy-slider-item-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiffy-slider {
+    --swiffy-slider-item-count: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .swiffy-slider {
+    --swiffy-slider-item-count: 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-card:nth-child(2) {
     margin-top: 150px;
   }
 }

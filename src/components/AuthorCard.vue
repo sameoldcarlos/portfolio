@@ -11,7 +11,7 @@ const textContent = computed(() => {
 });
 </script>
 <template>
-  <div class="author-card w-full max-w-[800px] flex flex-col items-center border-description-border border-2 pb-4">
+  <div class="author-card w-full lg:max-w-[800px] flex flex-col items-center border-description-border border-2 pb-4">
     <div class="author-card__header h-6 border-b-description-border border-b-2 bg-description-header w-full" />
     <div class="author-card__content flex flex-col lg:flex-row gap-2 lg:gap-4 items-center lg:items-start p-2 mb-2">
       <div class="avatar-container min-w-[150px] max-w-[230px]">
