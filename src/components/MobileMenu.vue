@@ -17,13 +17,12 @@ onClickOutside(menuTarget, () => {
 });
 </script>
 <template>
-  <aside
-    ref="menuTarget"
-    :class="[menuStore.isMenuOpen ? 'block' : 'hidden']"
-  >
+  <aside ref="menuTarget">
     <div
-      class="fixed top-0 left-0 h-full bg-primary-accent z-50"
-      v-show="menuStore.isMenuOpen"
+      :class="[
+        'fixed top-0 left-0 h-full bg-primary-accent z-50 transform transition-transform duration-300 ease-linear',
+        menuStore.isMenuOpen ? 'translate-x-0' : 'translate-x-[-100%]'
+      ]"
     >
       <div class="flex flex-col items-center h-full py-7">
         <button
@@ -36,11 +35,11 @@ onClickOutside(menuTarget, () => {
           <li
             v-for="option in menuOptions"
             :key="option.id"
-            class="text-2xl py-2 px-12"
+            class="text-2xl"
           >
             <a
               :href="option.link"
-              class="text-secondary-text"
+              class="text-secondary-text py-2 px-12 block h-full"
             >
               {{ option.title }}
             </a>

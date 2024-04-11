@@ -2,6 +2,10 @@
   "options": {
     "en": [
       {
+        "title": "Home",
+        "link": "#"
+      },
+      {
         "title": "About",
         "link": "#about"
       },
@@ -24,6 +28,10 @@
     ],
     "es": [
       {
+        "title": "Inicio",
+        "link": "#"
+      },
+      {
         "title": "Sobre",
         "link": "#about"
       },
@@ -45,6 +53,11 @@
       }
     ],
     "pt": [
+      {
+        "title": "Início",
+        "link": "#"
+
+      },
       {
         "title": "Sobre",
         "link": "#about"

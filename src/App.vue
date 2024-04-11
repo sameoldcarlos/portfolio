@@ -65,7 +65,7 @@ onMounted(() => {
 <template>
   <main>
     <div
-      :class="['menu-overlay absolute w-screen h-screen bg-secondary-text opacity-50', [menuStore.isMenuOpen ? 'block z-40' : 'hidden z-0']]"
+      :class="['menu-overlay fixed w-screen h-screen bg-secondary-text opacity-50', [menuStore.isMenuOpen ? 'block z-40' : 'hidden z-0']]"
     />
     <component :is="MobileMenu" />
     <section class="content-section bg-gradient-to-b from-secondary-bg relative">
@@ -174,7 +174,7 @@ onMounted(() => {
     <hr class="mt-32 lg:mt-12 mx-4">
     <section
       id="experience"
-      class="content-section relative lg:mb-[250px]"
+      class="experience content-section relative lg:mb-[250px]"
     >
       <h2 class="mt-12 mb-6 text-3xl font-semibold font-secondary text-center">
         {{ textContent.experience }}
@@ -260,9 +260,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   scroll-behavior: smooth;
+}
+
+.content-section,
+.experience .main-section-content,
+.projects-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .content-section::-webkit-scrollbar {
