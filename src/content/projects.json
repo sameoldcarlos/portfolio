@@ -8,7 +8,7 @@
       },
       "image": "images/projects/gambi_code.png",
       "link": "https://gambi-code.netlify.app/",
-      "repo": "https://github.com/sameoldcarlos/gambi-code"
+      "repo": "https://github.com/caapereira/gambi-code"
     },
 
     {
@@ -19,7 +19,7 @@
       },
       "image": "images/projects/good_buy.png",
       "link": "https://goodbuy-store.netlify.app",
-      "repo": "https://github.com/sameoldcarlos/fake-store-ecommerce"
+      "repo": "https://github.com/caapereira/fake-store-ecommerce"
     },
 
     {
@@ -29,8 +29,8 @@
         "pt": "Modelo fictício de uma home page para uma casa de apostas."
       },
       "image": "images/projects/soft_bet.png",
-      "link": "https://github.com/sameoldcarlos/soft-bet",
-      "repo": "https://github.com/sameoldcarlos/soft-bet"
+      "link": "https://github.com/caapereira/soft-bet",
+      "repo": "https://github.com/caapereira/soft-bet"
     }
   ]
 }
